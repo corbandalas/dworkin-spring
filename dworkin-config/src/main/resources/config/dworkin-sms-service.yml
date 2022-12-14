@@ -1,0 +1,28 @@
+server:
+  port: 8081
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:54321/postgres
+    username: postgres
+    password: x13jwk34
+
+  spring:
+    jpa:
+      open-in-view: false
+      hibernate:
+        ddl-auto: update
+
+hibernate:
+  show_sql: true
+  highlight_sql: true
+
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8741/eureka
+  instance:
+    prefer-ip-address: true
+
